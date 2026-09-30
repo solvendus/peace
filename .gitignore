@@ -1,0 +1,8 @@
+build
+__pycache__
+.venv
+*.egg-info/
+prediction.npz
+data
+tests
+.DS_Store

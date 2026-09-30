@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peace"
+version = "0.1.0"
+description = "PEACE model"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Rongzhi Gao"}]
+dependencies = [
+  "jax==0.9.0.1; sys_platform != 'darwin' or platform_machine != 'x86_64'",
+  "jax==0.4.38; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+  "flax==0.12.3; sys_platform != 'darwin' or platform_machine != 'x86_64'",
+  "flax==0.10.4; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+  "optax==0.2.4; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+  "orbax-checkpoint==0.11.5; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+  "e3nn-jax==0.20.8",
+  "jraph==0.0.6.dev0",
+  "ml-collections==1.1.0",
+  "numpy==2.3.5",
+  "scipy==1.17.0",
+  "PyYAML==6.0.3",
+]
+
+[project.scripts]
+peace-predict = "peace.cli:main"
+peace-sharc = "peace.sharc:main"
+
+[tool.setuptools.packages.find]
+include = ["peace", "peace.*"]
+

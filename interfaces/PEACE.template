@@ -1,0 +1,2 @@
+modelpath model_config.yaml
+paramspath params.pickle

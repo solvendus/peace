@@ -1,0 +1,57 @@
+E0s:
+  C: -2968.696548853237
+  H: -2968.696548853237
+  S: -2968.696548853237
+architecture: peace
+attention_head_dim: 8
+attention_heads: 2
+attention_layers: 1
+attention_residual_scale: 0.1
+cutoff_transition_width: 0.5
+electronic_parity:
+- 2
+- 2
+gap_average:
+- -5.4569682106375694e-12
+- 1.582441042719438
+- 1.4107228624161507
+- 2.168008236489186
+graph_net_steps: 2
+hamiltonian_hidden_dim: 32
+hamiltonian_mlp_layers: 2
+hamiltonian_odd_scale: 1.0
+hidden_irreps: 16x0e + 16x0o + 16x1o + 16x1e + 8x2e + 8x2o
+include_soc: true
+internal_connection_scale: 1.0
+latent_n_states: 4
+lvc_oop_scale: 1.0
+mapping:
+  C: 1
+  H: 0
+  S: 2
+n_elements: 3
+n_neighbors: 3.0
+n_singlets: 2
+n_states: 4
+n_triplets: 2
+nonlinearities:
+  e: raw_swish
+  o: tanh
+norm_stats: null
+num_basis: 8
+pair_encoder_n_layers: 2
+r_max: 8.0
+radial_net_n_hidden: 32
+radial_net_n_layers: 2
+radial_net_nonlinearity: raw_swish
+reflection_signature:
+- 1
+- -1
+- -1
+- 1
+rigid_connection_scale: 1.0
+scalar_mlp_std: 1.0
+sh_irreps: 1x0e + 1x1o + 1x2e
+soc_scale: 0.01
+soc_spin_convention: sharc_v1
+use_au: false
