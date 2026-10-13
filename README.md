@@ -62,3 +62,17 @@ paramspath /path/to/params.pickle
 ```
 
 SHARC's own Python dependencies, including [PySCF](https://github.com/pyscf/pyscf), belong to the external SHARC installation.
+
+## Reference
+If you use PEACE, please cite the following [paper](https://doi.org/10.48550/arXiv.2610.09576):
+```bib
+@misc{peace,
+      title={PEACE: Covariant learning of nonadiabatic manifolds with parity-resolved Hamiltonians}, 
+      author={Rongzhi Gao and Shuguang Chen and Yang Zhou and GuanHua Chen and Ziyang Hu and ChiYung Yam},
+      year={2026},
+      eprint={2610.09576},
+      archivePrefix={arXiv},
+      primaryClass={physics.chem-ph},
+      url={https://arxiv.org/abs/2610.09576}, 
+}
+```
